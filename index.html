@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  -ms-flex: 50%; /* IE 10 */
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header" id="myHeader">
+  <h1>Departamento en Vertical Isuto</h1>
+  <p>Ubicación en google maps y galería de fotos.</p>
+  <p>Google Maps: <a target="_blank" href="https://goo.gl/maps/5VNKhGUaXXruNuZd9">Enlace</a></p>
+  Whatsapp: <a target="_blank" href="https://wa.me/59178187330"> 78187330 </a>
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="image 1.jpeg" style="width:100%">
+    <img src="image 2.jpeg" style="width:100%">
+    <img src="image 3.jpeg" style="width:100%">
+    <img src="image 4.jpeg" style="width:100%">
+    <img src="image 5.jpeg" style="width:100%">
+    <img src="image 6.jpeg" style="width:100%">
+
+
+  </div>
+  <div class="column">
+    <img src="image 8.jpeg" style="width:100%">
+    <img src="image 9.jpeg" style="width:100%">
+    <img src="image 10.jpeg" style="width:100%">
+    <img src="image 11.jpeg" style="width:100%">
+    <img src="image 12.jpeg" style="width:100%">
+	<img src="image 19.jpeg" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="image 14.jpeg" style="width:100%">
+    <img src="image 15.jpeg" style="width:100%">
+    <img src="image 16.jpeg" style="width:100%">
+    <img src="image 17.jpeg" style="width:100%">
+    <img src="image 18.jpeg" style="width:100%">
+    <img src="image 16.jpeg" style="width:100%">
+
+  </div>
+  <div class="column">
+    <img src="image 21.jpeg" style="width:100%">
+    <img src="image 22.jpeg" style="width:100%">
+    <img src="image 23.jpeg" style="width:100%">
+    <img src="image 20.jpeg" style="width:100%">
+	<img src="image 13.jpeg" style="width:100%">
+	<img src="image 7.jpeg" style="width:100%">
+  </div>
+</div>
+
+<script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+// Four images side by side
+function four() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "25%";  // IE10
+    elements[i].style.flex = "25%";
+  }
+}
+
+
+
+ four();
+</script>
+
+</body>
+</html>
